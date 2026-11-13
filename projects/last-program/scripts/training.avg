@@ -1,0 +1,10 @@
+// 可绑定到 UI 按钮，也可以 call
+[如果 attr.health >= 10]
+  [显示 lin 表情=normal 位置=左侧]
+  [动画 lin 动画=练习 时长=0.5]
+  [设置 attr.health -= 10]
+  [设置 attr.study += 1]
+[否则]
+  lin: 先休息一下吧。
+[/如果]
+[返回]

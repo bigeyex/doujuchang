@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-11-08",
+  "assets": [
+    {
+      "file": "projects/last-program/story-assets/backgrounds/hall.png",
+      "prompt": "Use case: illustration-story. Asset type: background image for an original Chinese high school visual novel titled The Last Program List. Generate a beautiful atmospheric anime visual novel background of an empty Chinese high school corridor at dusk, floor reflecting warm amber sunlight, windows on left, classroom doors on right, noticeboard and a distant stairwell. Cinematic clean linework and painterly light, muted indigo blue and warm honey palette, detailed believable architecture, contemplative tension. No people, no text, no logos, no watermark. Portrait composition approximately 2:3, usable crop for a 9:16 game and landscape. The bottom quarter may be covered by a dialogue box."
+    },
+    {
+      "file": "projects/last-program/story-assets/source/characters/lin-full.png",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent character standing sprite for an original Chinese school visual novel. One Chinese teenage schoolgirl Lin Xia, short dark brown bob with a small ivory hair clip, expressive warm brown eyes, white shirt, loosely worn muted rust red ribbon tie, navy blue cardigan and navy pleated skirt, modest ordinary high school uniform. Calm but determined expression, arms naturally at sides, three-quarter view facing slightly to viewer right. Anime visual novel illustration with delicate linework, softly shaded muted colors and warm dusk rim light. Full body from top of hair to shoes completely visible, centered on a portrait canvas, ample transparent margin, no cropped limbs. Exactly one character, no props, no text, no shadow ground, genuine transparent background."
+    },
+    {
+      "file": "projects/last-program/story-assets/source/characters/lin-angry-full.png",
+      "reference": "lin.png",
+      "transparent": true,
+      "prompt": "Edit target: the attached transparent full-body schoolgirl visual novel sprite. Identity-preserve expression variant: change ONLY her facial expression to restrained anger and hurt, slightly furrowed brows, determined eyes, slightly open mouth as if questioning a friend. Preserve the exact face identity, hairstyle, ivory hair clip, white shirt, navy cardigan, rust ribbon, skirt, body pose, camera, lighting, canvas dimensions, character scale and position. Full body and shoes still visible. No added symbols or comic anger marks, no text, no background. Preserve genuine alpha transparency."
+    },
+    {
+      "file": "projects/last-program/story-assets/source/characters/chen-full.png",
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent character standing sprite for an original Chinese school visual novel. One Chinese teenage schoolboy Chen Mo, slightly messy short black hair, thoughtful dark eyes, white shirt with loose muted navy tie, unbuttoned navy school blazer and charcoal straight trousers, modest ordinary high school uniform. Reserved worried expression, one hand holding the strap of a dark school bag, three-quarter view facing slightly to viewer left. Anime visual novel illustration with delicate clean linework, softly shaded muted indigo colors and warm dusk rim light. Full body from top of hair to shoes completely visible, centered on a portrait canvas, ample transparent margin. Exactly one character, no text, no shadow ground, genuine transparent background."
+    },
+    {
+      "file": "projects/last-program/story-assets/backgrounds/radio.png",
+      "prompt": "Use case: illustration-story. Asset type: background for an original Chinese school visual novel. An empty small high school broadcasting room at dusk, two microphones, a sound mixing console and old desktop computer, window looking onto school courtyard, paper program sheets on desk without readable text. Delicate clean anime background linework and painterly honey sunlight, muted blue-gray interior, atmospheric contemplative school mystery. Portrait 2:3 framing, no people, no readable text, no watermark."
+    },
+    {
+      "file": "projects/last-program/story-assets/backgrounds/roof.png",
+      "prompt": "Use case: illustration-story. Asset type: background for an original Chinese school visual novel. Empty rooftop of a Chinese high school at sunset, chain-link safety fence, simple benches, a stairwell door, distant city and school courtyard, clouds glowing pale peach and dusky indigo. Beautiful detailed clean anime visual novel background, melancholic hopeful atmosphere, portrait 2:3 framing, no people, no text, no logo, no watermark."
+    }
+  ]
+}

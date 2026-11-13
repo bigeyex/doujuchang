@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "3.8.8",
+  "platform": "bytedance-mini-game",
+  "requiresCreator": false,
+  "files": {
+    "application.js": {
+      "bytes": 3302,
+      "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2"
+    },
+    "assets/internal/config.json": {
+      "bytes": 1849,
+      "sha256": "4015c2df47f24e581af83a166de242a47d13fbe435a96ca064d18248ded13a03"
+    },
+    "assets/internal/import/0e/0e107f583.json": {
+      "bytes": 111677,
+      "sha256": "5a497e1e6b3af777a879c5924dbb7a93b5492bce5ece1a4713c0e8809ef2c31b"
+    },
+    "assets/internal/index.js": {
+      "bytes": 45110,
+      "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c"
+    },
+    "assets/main/config.json": {
+      "bytes": 566,
+      "sha256": "911aa0a0964ab6fc43c83b398f964016cf9feb16a8597afa94dc618b1e407fb5"
+    },
+    "assets/main/import/5f/5fe23961-497a-4da7-b86c-e2ce651ebd02.json": {
+      "bytes": 820,
+      "sha256": "f03ef817367f7d01c057cb5454f2560bb22335e64eecdb5c9097de73098bce96"
+    },
+    "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json": {
+      "bytes": 192,
+      "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+    },
+    "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json": {
+      "bytes": 480,
+      "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+    },
+    "assets/main/index.js": {
+      "bytes": 199509,
+      "sha256": "ef72a06fa95363e401c9d1c718489ed25b9cfabf424ad88de999a9cef768bd87"
+    },
+    "assets/resources/config.json": {
+      "bytes": 426,
+      "sha256": "d888473552ab9c98e321b438780460cce084b6bb7a0092a33b989b9226afb798"
+    },
+    "assets/resources/import/29/29b43dad-595c-4584-4173-14f4fe5d6782.json": {
+      "bytes": 262,
+      "sha256": "f6caf27e0ea7133f1b2091c6e1148eef3c8c03356d1733b26c3abb4ed60d5c87"
+    },
+    "assets/resources/import/7c/7c1b255f-30ee-4238-8a93-f9b15ad65de2.json": {
+      "bytes": 540,
+      "sha256": "74a8b9a58d2fc0e934221ac0a63edc41ab37c3e8e88170af52038041d84f00a7"
+    },
+    "assets/resources/import/d0/d0c5d7b1-9ee0-8e32-e83d-6a62b3fde849.json": {
+      "bytes": 264,
+      "sha256": "571a6b5669b42c1347f99fe6c6c92c43b321ebbfbf87e87b4266edd5201035ab"
+    },
+    "assets/resources/index.js": {
+      "bytes": 605,
+      "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25"
+    },
+    "cocos-js/cc.js": {
+      "bytes": 1515213,
+      "sha256": "36117e9af4af01935d5efce6ccd77eb14df4c55f3ba4810531cd95099d2571ce"
+    },
+    "engine-adapter.js": {
+      "bytes": 24164,
+      "sha256": "1a754f1bf0f1a26571394348e6d590cee578f8022e2f661d6c120f115ff5a841"
+    },
+    "game.js": {
+      "bytes": 1933,
+      "sha256": "0f4314f1abbe01bf2bc9ce6d3b66bfbfc341379bf8eb9683e5eced1d2b36c3ef"
+    },
+    "game.json": {
+      "bytes": 214,
+      "sha256": "1c41528f4574f42a9433151ad40b4ffc92b88df19b7493026f91f11be7f52670"
+    },
+    "LICENSE.cocos.md": {
+      "bytes": 1188,
+      "sha256": "96dcdd61a53c44fc7526ec2abedd66e5d1d00bb616725f0f54491caedd5fdcb7"
+    },
+    "project.config.json": {
+      "bytes": 147,
+      "sha256": "4087f31702d270f7b91cb939bd92fbe91392919cfb513c54a1d405f8ff60f1d1"
+    },
+    "src/chunks/bundle.js": {
+      "bytes": 4679,
+      "sha256": "cb48dfeb4538a73485e1cb6a124ef70bdb4bb626b2b069a826e67af9be4a1645"
+    },
+    "src/effect.bin": {
+      "bytes": 5755,
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+    },
+    "src/import-map.js": {
+      "bytes": 210,
+      "sha256": "f3cf39bc861d3a2ffd0bfc7d2e7df4397e54d13f71d3f74fbe213219e728bbdc"
+    },
+    "src/polyfills.bundle.js": {
+      "bytes": 8394,
+      "sha256": "cb588d11797e0ca56123d979812db39c8b38dd01c5a6761b2aa5f79cb1d4c701"
+    },
+    "src/project": {
+      "bytes": 45,
+      "sha256": "6db215031c83b10a9946ea72272ee4f38465027e079df109de6fa2d3943bd75f"
+    },
+    "src/settings.json": {
+      "bytes": 21256,
+      "sha256": "d212f36f82de4d5bb4354368fd2ff3522c6584cbe9a203fa5d2187b45b649517"
+    },
+    "src/system.bundle.js": {
+      "bytes": 8319,
+      "sha256": "9e52437715d2e6a8acacb41f1c64d916e4b455d2a9d448f09cecd551dc084b84"
+    },
+    "web-adapter.js": {
+      "bytes": 78839,
+      "sha256": "de345992e79a8583354d9dea6913ad58bd1d1de97088e7d6fd11a092544f4a22"
+    }
+  }
+}

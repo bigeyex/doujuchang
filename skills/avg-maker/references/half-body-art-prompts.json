@@ -1,0 +1,30 @@
+[
+  {
+    "key": "linBust",
+    "prompt": "Use case: identity-preserve. Edit target: the attached full-body anime visual novel character sprite. Recompose this SAME character into a premium WAIST-UP HALF-BODY visual novel sprite. Only the head, shoulders, chest, arms and upper torso down to the waist are shown. Absolutely NO legs, thighs, knees, skirt below the waist, or shoes. Keep the exact character identity, hairstyle, face, clothing, colors, orientation and softly painted anime visual novel style. Facial expression: calm and determined, gently attentive. Bring the character much closer so the face is large and expressive. Square canvas, hair top around 5 percent of canvas height, nose near 28 percent, waist at the lower edge around 95 percent. Both shoulders fully visible, generous transparent margins on left and right. Continue the reference pose naturally; keep hands outside the frame if the reference hands are below the waist. One character only, true alpha transparent background, no ground shadow, no glow around silhouette, no text, no props added. This is an actual game sprite, not a character sheet.",
+    "path": "story-assets/characters/lin/normal.png",
+    "tool": "image_gen",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "linAngryBust",
+    "prompt": "Use case: identity-preserve. Edit target: the attached full-body anime visual novel character sprite. Recompose this SAME character into a premium WAIST-UP HALF-BODY visual novel sprite. Only the head, shoulders, chest, arms and upper torso down to the waist are shown. Absolutely NO legs, thighs, knees, skirt below the waist, or shoes. Keep the exact character identity, hairstyle, face, clothing, colors, orientation and softly painted anime visual novel style. Facial expression: restrained anger and hurt, slightly furrowed brows, lips parted as if questioning a friend. Bring the character much closer so the face is large and expressive. Square canvas, hair top around 5 percent of canvas height, nose near 28 percent, waist at the lower edge around 95 percent. Both shoulders fully visible, generous transparent margins on left and right. Continue the reference pose naturally; keep hands outside the frame if the reference hands are below the waist. One character only, true alpha transparent background, no ground shadow, no glow around silhouette, no text, no props added. This is an actual game sprite, not a character sheet.",
+    "path": "story-assets/characters/lin/angry.png",
+    "tool": "image_gen",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "chenBust",
+    "prompt": "Use case: identity-preserve. Edit target: the attached full-body anime visual novel character sprite. Recompose this SAME character into a premium WAIST-UP HALF-BODY visual novel sprite. Only the head, shoulders, chest, arms and upper torso down to the waist are shown. Absolutely NO legs, thighs, knees, skirt below the waist, or shoes. Keep the exact character identity, hairstyle, face, clothing, colors, orientation and softly painted anime visual novel style. Facial expression: reserved and slightly worried, thoughtful eyes. Bring the character much closer so the face is large and expressive. Square canvas, hair top around 5 percent of canvas height, nose near 28 percent, waist at the lower edge around 95 percent. Both shoulders fully visible, generous transparent margins on left and right. Continue the reference pose naturally; keep hands outside the frame if the reference hands are below the waist. One character only, true alpha transparent background, no ground shadow, no glow around silhouette, no text, no props added. This is an actual game sprite, not a character sheet.",
+    "path": "story-assets/characters/chen/normal.png",
+    "tool": "image_gen",
+    "date": "2026-11-08"
+  },
+  {
+    "key": "paperUI",
+    "prompt": "Use case: productivity-visual. Asset type: seamless paper texture for a refined visual novel dialogue panel. A flat evenly lit warm ivory washi stationery paper texture, very subtle natural fibers, soft pale cream (#f4eddf), extremely restrained warm grain visible only on close inspection. No creases, no folds, no torn edges, no border, no frame, no objects, no shadow, no lettering, no gradients or vignette. Square edge-to-edge tileable texture. The texture must remain quiet and light enough for dark brown Chinese dialogue text to be clearly readable. Premium literary school visual novel aesthetic.",
+    "path": "story-assets/ui/paper.png",
+    "tool": "image_gen",
+    "date": "2026-11-08"
+  }
+]

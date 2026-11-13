@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 2,
+  "id": "last-program",
+  "name": "最后一张节目单",
+  "display": {
+    "orientation": "portrait",
+    "shortEdge": 720,
+    "longEdge": 1280
+  },
+  "defaultScreen": "game",
+  "startScreen": "title",
+  "$schema": "schema/project.schema.json",
+  "files": {
+    "scripts": "scripts/index.json",
+    "variables": "config/variables.json",
+    "characters": "config/characters.json",
+    "backgrounds": "config/backgrounds.json",
+    "audio": "config/audio.json",
+    "screens": "config/screens.json",
+    "theme": "config/theme.json",
+    "videos": "config/videos.json"
+  }
+}

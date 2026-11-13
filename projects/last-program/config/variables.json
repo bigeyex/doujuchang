@@ -1,0 +1,26 @@
+{
+  "evidence": {
+    "type": "boolean",
+    "default": false
+  },
+  "trust": {
+    "type": "number",
+    "default": 0
+  },
+  "attr.health": {
+    "type": "number",
+    "default": 30
+  },
+  "attr.maxHealth": {
+    "type": "number",
+    "default": 100
+  },
+  "attr.study": {
+    "type": "number",
+    "default": 0
+  },
+  "playerName": {
+    "type": "string",
+    "default": "新同学"
+  }
+}

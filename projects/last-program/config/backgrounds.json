@@ -1,0 +1,53 @@
+[
+  {
+    "id": "hall_evening",
+    "name": "放学后的走廊",
+    "image": "story-assets/backgrounds/hall.png",
+    "transition": "fade",
+    "duration": 0.4,
+    "rect": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.1851851851851853,
+      "h": 1
+    },
+    "reference": {
+      "width": 720,
+      "height": 1280
+    }
+  },
+  {
+    "id": "radio",
+    "name": "广播室",
+    "image": "story-assets/backgrounds/radio.png",
+    "transition": "fade",
+    "duration": 0.4,
+    "rect": {
+      "x": 0.4907192257741476,
+      "y": 0.5,
+      "w": 1.1851851851851853,
+      "h": 1
+    },
+    "reference": {
+      "width": 720,
+      "height": 1280
+    }
+  },
+  {
+    "id": "rooftop",
+    "name": "天台",
+    "image": "story-assets/backgrounds/roof.png",
+    "transition": "fade",
+    "duration": 0.5,
+    "rect": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.1851851851851853,
+      "h": 1
+    },
+    "reference": {
+      "width": 720,
+      "height": 1280
+    }
+  }
+]

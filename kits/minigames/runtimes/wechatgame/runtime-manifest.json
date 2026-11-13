@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "3.8.8",
+  "platform": "wechatgame",
+  "requiresCreator": false,
+  "files": {
+    "application.js": {
+      "bytes": 3302,
+      "sha256": "359f85dd922e2568aa991af95a5c356a0102042c8918252987bfbd37f2153eb2"
+    },
+    "assets/internal/config.json": {
+      "bytes": 1849,
+      "sha256": "4015c2df47f24e581af83a166de242a47d13fbe435a96ca064d18248ded13a03"
+    },
+    "assets/internal/import/0e/0e107f583.json": {
+      "bytes": 111677,
+      "sha256": "5a497e1e6b3af777a879c5924dbb7a93b5492bce5ece1a4713c0e8809ef2c31b"
+    },
+    "assets/internal/index.js": {
+      "bytes": 45110,
+      "sha256": "19bd675acfdd6f12d4bfec92fa4fa354b57c1dee7256325dce20ebfc5657b58c"
+    },
+    "assets/main/config.json": {
+      "bytes": 566,
+      "sha256": "911aa0a0964ab6fc43c83b398f964016cf9feb16a8597afa94dc618b1e407fb5"
+    },
+    "assets/main/import/5f/5fe23961-497a-4da7-b86c-e2ce651ebd02.json": {
+      "bytes": 820,
+      "sha256": "f03ef817367f7d01c057cb5454f2560bb22335e64eecdb5c9097de73098bce96"
+    },
+    "assets/main/import/ba/ba21476f-2866-4f81-9c4d-6e359316e448.json": {
+      "bytes": 192,
+      "sha256": "0a34e9263b215bb661d6334db6a255497c6cdac1f1c40b130f50bf9d91f4dd39"
+    },
+    "assets/main/import/fd/fd8ec536-a354-4a17-9c74-4f3883c378c8.json": {
+      "bytes": 480,
+      "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
+    },
+    "assets/main/index.js": {
+      "bytes": 199509,
+      "sha256": "ef72a06fa95363e401c9d1c718489ed25b9cfabf424ad88de999a9cef768bd87"
+    },
+    "assets/resources/config.json": {
+      "bytes": 426,
+      "sha256": "d888473552ab9c98e321b438780460cce084b6bb7a0092a33b989b9226afb798"
+    },
+    "assets/resources/import/29/29b43dad-595c-4584-4173-14f4fe5d6782.json": {
+      "bytes": 262,
+      "sha256": "f6caf27e0ea7133f1b2091c6e1148eef3c8c03356d1733b26c3abb4ed60d5c87"
+    },
+    "assets/resources/import/7c/7c1b255f-30ee-4238-8a93-f9b15ad65de2.json": {
+      "bytes": 540,
+      "sha256": "74a8b9a58d2fc0e934221ac0a63edc41ab37c3e8e88170af52038041d84f00a7"
+    },
+    "assets/resources/import/d0/d0c5d7b1-9ee0-8e32-e83d-6a62b3fde849.json": {
+      "bytes": 264,
+      "sha256": "571a6b5669b42c1347f99fe6c6c92c43b321ebbfbf87e87b4266edd5201035ab"
+    },
+    "assets/resources/index.js": {
+      "bytes": 605,
+      "sha256": "51a07ab61ee49561d29734ff6ee095b0d8a47998bbe30a6f1973bf3c8b7faa25"
+    },
+    "cocos-js/cc.js": {
+      "bytes": 1507516,
+      "sha256": "6a4f3c2e055c24a3e5f9c806093c5e3e19c0c3aa230224a1ce73764815a8d091"
+    },
+    "engine-adapter.js": {
+      "bytes": 20342,
+      "sha256": "5b649b336c4be870e7d40cad6b5231623032a77444644e42af34ad31fd9fd031"
+    },
+    "first-screen.js": {
+      "bytes": 18877,
+      "sha256": "ca507d7d4dfc5010354dc65cf43b74e571ca4df30ffccd140daf6b1ab5d73ac2"
+    },
+    "game.js": {
+      "bytes": 2608,
+      "sha256": "ae7c0256508b4f8c2b0a97e67291c43e9c9317cecfc6db7b2495b0818a22aa05"
+    },
+    "game.json": {
+      "bytes": 186,
+      "sha256": "3a34225ebbeadbe9f6973fa0406c33ccf3f77c892f4f50a0f7104709d8ecc0d0"
+    },
+    "LICENSE.cocos.md": {
+      "bytes": 1188,
+      "sha256": "96dcdd61a53c44fc7526ec2abedd66e5d1d00bb616725f0f54491caedd5fdcb7"
+    },
+    "logo.png": {
+      "bytes": 14496,
+      "sha256": "9e6a5832c6bc9c5f2da97dc54d916fd257a6ab35e9ffd57dbe88c435bd535940"
+    },
+    "project.config.json": {
+      "bytes": 457,
+      "sha256": "5c3575a9b15769ad3bb5bcd3deeb2b9fadc8089996ab96e73b567379d579f906"
+    },
+    "slogan.png": {
+      "bytes": 11482,
+      "sha256": "b3113554f80c03f9ce51d12ea7c17d68bf7914b89d092743cc54cd370d7f65a9"
+    },
+    "src/chunks/bundle.js": {
+      "bytes": 4679,
+      "sha256": "cb48dfeb4538a73485e1cb6a124ef70bdb4bb626b2b069a826e67af9be4a1645"
+    },
+    "src/effect.bin": {
+      "bytes": 5755,
+      "sha256": "b0d92f8307e3109abe8af8a863d68feb58cf4f49cf000b1d48fbb3dc3ad45556"
+    },
+    "src/import-map.js": {
+      "bytes": 210,
+      "sha256": "f3cf39bc861d3a2ffd0bfc7d2e7df4397e54d13f71d3f74fbe213219e728bbdc"
+    },
+    "src/polyfills.bundle.js": {
+      "bytes": 8394,
+      "sha256": "cb588d11797e0ca56123d979812db39c8b38dd01c5a6761b2aa5f79cb1d4c701"
+    },
+    "src/settings.json": {
+      "bytes": 1947,
+      "sha256": "9de18878ff48cdd2ebfaf587f8d6823b2d6353b3178519fbb00f439575779361"
+    },
+    "src/system.bundle.js": {
+      "bytes": 8319,
+      "sha256": "9e52437715d2e6a8acacb41f1c64d916e4b455d2a9d448f09cecd551dc084b84"
+    },
+    "web-adapter.js": {
+      "bytes": 90055,
+      "sha256": "699ad028d891e2671b6be8c46bd7835d9dadbda23758b072e3db22085edea34f"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+* text=auto eol=lf
+# Runtime manifests verify the exact bytes distributed by the engine build.
+public/engine/** -text -diff
+kits/minigames/runtimes/** -text -diff
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.webp -text
+*.wav -text
+*.mp3 -text
+*.ogg -text
+*.m4a -text
+*.mp4 -text
+*.wasm -text
+*.bin -text
+*.zip -text

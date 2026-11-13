@@ -1,0 +1,58 @@
+[
+  {
+    "id": "lin",
+    "name": "林夏",
+    "color": "#edbd9f",
+    "poses": [
+      {
+        "id": "normal",
+        "name": "坚定",
+        "image": "story-assets/characters/lin/normal.png",
+        "faceCenter": {
+          "u": 0.59,
+          "v": 0.28
+        },
+        "crop": 0.32,
+        "scale": 1,
+        "framing": "bust"
+      },
+      {
+        "id": "angry",
+        "name": "生气",
+        "image": "story-assets/characters/lin/angry.png",
+        "faceCenter": {
+          "u": 0.59,
+          "v": 0.28
+        },
+        "crop": 0.32,
+        "scale": 1,
+        "framing": "bust"
+      }
+    ]
+  },
+  {
+    "id": "chen",
+    "name": "陈默",
+    "color": "#a8c6da",
+    "poses": [
+      {
+        "id": "normal",
+        "name": "犹豫",
+        "image": "story-assets/characters/chen/normal.png",
+        "faceCenter": {
+          "u": 0.48,
+          "v": 0.28
+        },
+        "crop": 0.32,
+        "scale": 1,
+        "framing": "bust"
+      }
+    ]
+  },
+  {
+    "id": "xu",
+    "name": "许知遥",
+    "color": "#cbb6e1",
+    "poses": []
+  }
+]

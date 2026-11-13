@@ -1,0 +1,32 @@
+[
+  {
+    "id": "main",
+    "name": "放学后",
+    "path": "scripts/main.avg"
+  },
+  {
+    "id": "investigate",
+    "name": "广播室",
+    "path": "scripts/investigate.avg"
+  },
+  {
+    "id": "decision",
+    "name": "最后的选择",
+    "path": "scripts/decision.avg"
+  },
+  {
+    "id": "training",
+    "name": "练习片段",
+    "path": "scripts/training.avg"
+  },
+  {
+    "id": "practice",
+    "name": "循环示例",
+    "path": "scripts/practice.avg"
+  },
+  {
+    "id": "ending",
+    "name": "三个结局",
+    "path": "scripts/ending.avg"
+  }
+]

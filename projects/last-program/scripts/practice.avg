@@ -1,0 +1,8 @@
+[背景 rooftop]
+[显示 lin 表情=normal 位置=中央]
+[循环 attr.health >= 10]
+  lin: 再练一次。今天已经练习了 {attr.study} 次。
+  [调用 training]
+[/循环]
+lin: 今天就到这里吧。
+[返回]

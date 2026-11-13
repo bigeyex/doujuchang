@@ -1,0 +1,13 @@
+{
+  "name": "avg-kit-minigames",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "doctor": "node export.mjs --doctor"
+  }
+}
