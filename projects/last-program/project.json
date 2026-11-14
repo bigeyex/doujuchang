@@ -19,5 +19,10 @@
     "screens": "config/screens.json",
     "theme": "config/theme.json",
     "videos": "config/videos.json"
+  },
+  "splash": {
+    "enabled": true,
+    "screen": "splash",
+    "duration": 1.2
   }
 }

@@ -18,6 +18,7 @@ export async function verifyRuntime(platform,runtimeRoot=path.join(kitRoot,'runt
  return {manifest,directory:runtimeRoot};
 }
 export function assetReferences(project){return [
+ ...(project.icon?[{object:project,key:'icon'}]:[]),
  ...project.characters.flatMap(c=>c.poses.map(p=>({object:p,key:'image'}))),
  ...project.backgrounds.map(b=>({object:b,key:'image'})),
  ...(project.audio??[]).map(a=>({object:a,key:'file'})),...(project.videos??[]).map(a=>({object:a,key:'file'})),

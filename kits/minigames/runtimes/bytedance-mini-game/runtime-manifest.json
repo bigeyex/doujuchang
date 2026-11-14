@@ -37,8 +37,8 @@
       "sha256": "c2eee4552a460ed97591f527e127b95c811d5f796b9448f3f705974af9beba9d"
     },
     "assets/main/index.js": {
-      "bytes": 199509,
-      "sha256": "ef72a06fa95363e401c9d1c718489ed25b9cfabf424ad88de999a9cef768bd87"
+      "bytes": 204247,
+      "sha256": "13c8f537d951e355d2db3811f7b76954a7691bb54e9b2b92d7c292926e98c9ee"
     },
     "assets/resources/config.json": {
       "bytes": 426,
@@ -80,6 +80,10 @@
       "bytes": 1188,
       "sha256": "96dcdd61a53c44fc7526ec2abedd66e5d1d00bb616725f0f54491caedd5fdcb7"
     },
+    "LICENSE.lucide": {
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
     "project.config.json": {
       "bytes": 147,
       "sha256": "4087f31702d270f7b91cb939bd92fbe91392919cfb513c54a1d405f8ff60f1d1"
@@ -105,8 +109,8 @@
       "sha256": "6db215031c83b10a9946ea72272ee4f38465027e079df109de6fa2d3943bd75f"
     },
     "src/settings.json": {
-      "bytes": 21256,
-      "sha256": "d212f36f82de4d5bb4354368fd2ff3522c6584cbe9a203fa5d2187b45b649517"
+      "bytes": 1666,
+      "sha256": "ff714147c36eeb93516fec42385e13e6009387f82d9f5e81e10ee69c2f56ffa0"
     },
     "src/system.bundle.js": {
       "bytes": 8319,

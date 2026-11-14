@@ -63,3 +63,12 @@ test('image states and dialogue subcontrols are remapped to packaged media',asyn
  const out=await exportMinigame({projectDirectory:dir}),data=JSON.parse(await fs.readFile(path.join(out.directory,'subpackages/story/project.json'),'utf8')),screen=data.screens.find(s=>s.id==='game');
  for(const object of [screen.controls[0],screen.dialogue,screen.dialogue.speaker,screen.dialogue.text,...screen.controls.slice(-2)])for(const key of ['image','hoverImage','pressedImage','disabledImage','onImage','offImage','trackImage','fillImage'])if(object[key]){assert.match(object[key],/^media\/[a-f0-9]{64}\.png$/);await fs.access(path.join(out.directory,'subpackages/story',object[key]));}
 });
+
+test('startup icon and edited layout reach the mini-game without enabling the Creator splash',async t=>{
+ const dir=await fixture(t);await seed(dir);const manifestFile=path.join(dir,'project.json'),manifest=JSON.parse(await fs.readFile(manifestFile,'utf8'));
+ manifest.icon='story-assets/ui/paper.png';manifest.splash.enabled=false;await fs.writeFile(manifestFile,JSON.stringify(manifest));
+ const out=await exportMinigame({projectDirectory:dir}),project=JSON.parse(await fs.readFile(path.join(out.directory,'subpackages/story/project.json'),'utf8'));
+ assert.match(project.icon,/^media\/[a-f0-9]{64}\.png$/);assert.equal(project.splash.enabled,false);assert.equal(project.screens.find(s=>s.id===project.splash.screen).kind,'splash');
+ await fs.access(path.join(out.directory,'subpackages/story',project.icon));
+ const settings=JSON.parse(await fs.readFile(path.join(out.directory,'src/settings.json'),'utf8'));assert.equal(settings.splashScreen.totalTime,0);assert.equal(settings.splashScreen.logo,undefined);
+});

@@ -107,3 +107,15 @@ my-story/
 控件 image 代替背景颜色；按钮可另设 hoverImage / pressedImage / disabledImage，开关用 onImage / offImage，进度条或滑条用 trackImage / fillImage。图片均为项目内路径，导出时一起收集。对话框可设 image；dialogue.speaker 和 dialogue.text 各自保存 x/y/w/h、fontSize、color、可选 image，位置尺寸相对父对话框，四角缩放保持比例。history 控件显示运行时历史，不把历史文本写进创作配置。
 
 背景另存 reference:{width,height} 记录编辑时的参考画幅；切换横竖屏时按同一缩放比例转换 rect，保留素材比例并继续裁剪。
+
+## 启动画面与项目图标
+
+`project.json` 中的 `icon` 为项目内图片路径；不设置时使用默认羽毛图标。`splash` 保存开关、时长（秒）和启动页面 ID，例如：
+
+```json
+{"icon":"story-assets/ui/icon.png","splash":{"enabled":true,"duration":1.2,"screen":"启动画面"}}
+```
+
+页面存放在 `config/screens.json`，使用 `kind: "splash"`，与开始页 `startScreen` 独立。背景色为页面的 `color`；内容使用普通控件。图片控件设为 `source: "projectIcon"` 时读取项目图标，其他图片仍读取 `image`。修改页面不会改变开关；关闭时直接进入开始页。旧项目读取时会补齐默认启动页，下一次保存时写入配置。
+
+文字控件使用 `source: "projectName"` 自动显示项目名称；`source: "literal"`（或省略）时使用 `text`。

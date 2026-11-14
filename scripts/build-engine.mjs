@@ -5,6 +5,7 @@ import {root} from './seed.mjs';
 import {prepareEngine} from './prepare-engine.mjs';
 import {findCreator,creatorResourcePath} from './creator-tools.mjs';
 import {writeRuntimeManifest} from './engine-runtime.mjs';
+import {disableEngineSplash} from './startup-build.mjs';
 const CREATOR=await findCreator();
 const generatedRoot=path.resolve(root,'cocos-project');for(const relative of ['assets/resources/story-assets','build/web-mobile']){const generated=path.resolve(generatedRoot,relative);if(!generated.startsWith(generatedRoot+path.sep))throw new Error('构建清理路径越界');await fs.rm(generated,{recursive:true,force:true});}
 const project=await prepareEngine();
@@ -21,5 +22,7 @@ if(![0,36].includes(Number(code)))throw new Error(`Creator exited ${code}`);
 const target=path.resolve(root,'public/engine');if(target!==path.resolve(root,'public','engine'))throw new Error('运行时输出路径越界');await fs.rm(target,{recursive:true,force:true});await fs.cp(source,target,{recursive:true});
 await fs.appendFile(path.join(root,'public/engine/style.css'),'\nhtml,body{overflow:hidden!important;min-width:0;min-height:0}#GameDiv,#Cocos3dGameContainer{overflow:hidden!important;min-width:0;min-height:0}\n');
 await fs.copyFile(creatorResourcePath(CREATOR,'resources/3d/engine/LICENSE.md'),path.join(root,'public/engine/LICENSE.cocos.md'));
+await fs.copyFile(path.join(root,'licenses/LICENSE.lucide'),path.join(target,'LICENSE.lucide'));
+await disableEngineSplash(target);
 await writeRuntimeManifest();
 console.log('Cocos runtime ready: public/engine/index.html');

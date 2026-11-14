@@ -5,6 +5,7 @@ import {spawn} from 'node:child_process';
 import {root} from './seed.mjs';
 import {prepareEngine,sceneUuid} from './prepare-engine.mjs';
 import {findCreator,creatorResourcePath} from './creator-tools.mjs';
+import {disableEngineSplash} from './startup-build.mjs';
 
 const platforms=process.argv.slice(2).length?process.argv.slice(2):['wechatgame'];
 if(platforms.some(p=>!['wechatgame','bytedance-mini-game'].includes(p)))throw Error('未知小游戏构建平台');
@@ -20,7 +21,7 @@ let renderer=await fs.readFile(path.join(root,'cocos-template/AvgPlayer.ts'),'ut
 const start=renderer.indexOf('  async onLoad(){'),end=renderer.indexOf('  confirm=',start);
 if(start<0||end<0)throw Error('未知播放器结构');
 renderer=renderer.slice(0,start)+`  disposeLifecycle:any;
-  async onLoad(){this.createScene();try{const project=await mini.project();await this.configure(project);this.ready=true;this.disposeLifecycle=mini.lifecycle(()=>this.pauseStage(true),()=>this.pauseStage(false));}catch(error){this.report(error);}}
+  async onLoad(){this.createScene();try{const project=await mini.project();await this.configure(project,'title','',true);await this.showStartup();this.ready=true;this.disposeLifecycle=mini.lifecycle(()=>this.pauseStage(true),()=>this.pauseStage(false));}catch(error){this.report(error);}}
 `+renderer.slice(end);
 renderer=renderer.replace("import {Runtime}","import {mini} from './MiniPlatform';\nconst structuredClone=(value:any)=>JSON.parse(JSON.stringify(value));\nimport {Runtime}");
 renderer=renderer.replace("this.paused=value;","this.paused=value;mini.pause(value);");
@@ -55,6 +56,8 @@ for(const platform of platforms){
  if(!to.startsWith(path.resolve(root,'kits/minigames/runtimes')+path.sep))throw Error('输出路径越界');
  await fs.rm(to,{recursive:true,force:true});await fs.cp(from,to,{recursive:true});
  await fs.copyFile(creatorResourcePath(creator,'resources/3d/engine/LICENSE.md'),path.join(to,'LICENSE.cocos.md'));
+ await fs.copyFile(path.join(root,'licenses/LICENSE.lucide'),path.join(to,'LICENSE.lucide'));
+ await disableEngineSplash(to);
  const files={};async function collect(dir){for(const e of await fs.readdir(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())await collect(f);else{const data=await fs.readFile(f);files[path.relative(to,f).replaceAll('\\','/')]={bytes:data.length,sha256:crypto.createHash('sha256').update(data).digest('hex')};}}}await collect(to);
  await fs.writeFile(path.join(to,'runtime-manifest.json'),JSON.stringify({schemaVersion:1,engineVersion:'3.8.8',platform,requiresCreator:false,files},null,2));
  console.log('Runtime ready:',to,Object.values(files).reduce((n,f)=>n+f.bytes,0),'bytes');

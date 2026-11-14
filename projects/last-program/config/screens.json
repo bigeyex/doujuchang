@@ -1,5 +1,47 @@
 [
   {
+    "id": "splash",
+    "name": "启动画面",
+    "kind": "splash",
+    "color": "#181c24",
+    "controls": [
+      {
+        "id": "startup-icon",
+        "name": "项目图标",
+        "type": "image",
+        "source": "projectIcon",
+        "x": 0.5,
+        "y": 0.4,
+        "w": 0.2,
+        "h": 0.1125
+      },
+      {
+        "id": "startup-name",
+        "name": "项目名称",
+        "type": "text",
+        "source": "projectName",
+        "x": 0.5,
+        "y": 0.54,
+        "w": 0.8,
+        "h": 0.07,
+        "fontSize": 46,
+        "color": "#ead4ae"
+      },
+      {
+        "id": "startup-credit",
+        "name": "引擎署名",
+        "type": "text",
+        "text": "powered by 豆剧场, Cocos Engine",
+        "x": 0.5,
+        "y": 0.61,
+        "w": 0.85,
+        "h": 0.045,
+        "fontSize": 22,
+        "color": "#929bab"
+      }
+    ]
+  },
+  {
     "id": "title",
     "name": "开始",
     "kind": "base",

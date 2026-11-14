@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import {compileProject} from '../src/core/compiler.js';
+import {withStartupScreen} from '../src/core/layout.js';
 export const revision=data=>crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex').slice(0,20);
 export function inside(root,relative){if(typeof relative!=='string'||!relative||path.isAbsolute(relative))throw new Error('路径必须位于项目目录内');const resolved=path.resolve(root,relative);if(!resolved.startsWith(path.resolve(root)+path.sep))throw new Error('路径必须位于项目目录内');return resolved;}
 export const projectFiles={scripts:'scripts/index.json',variables:'config/variables.json',characters:'config/characters.json',backgrounds:'config/backgrounds.json',audio:'config/audio.json',videos:'config/videos.json',screens:'config/screens.json',theme:'config/theme.json'};
@@ -13,7 +14,7 @@ export async function readProject(directory){
  const data=JSON.parse(await fs.readFile(path.join(directory,'project.json'),'utf8'));
  if(data.schemaVersion===2){checkFiles(directory,data.files??{});for(const key of Object.keys(projectFiles))data[key]=key==='videos'&&!data.files[key]?[]:JSON.parse(await fs.readFile(inside(directory,data.files[key]),'utf8'));}
  data.videos??=[];for(const script of data.scripts)script.source=await fs.readFile(inside(directory,script.path),'utf8');
- return {project:data,revision:revision(data)};
+ const project=withStartupScreen(data);return {project,revision:revision(project)};
 }
 async function persist(directory,project,files){
  if(!Array.isArray(project.scripts)||!Array.isArray(project.characters)||!Array.isArray(project.screens)||!Array.isArray(project.backgrounds))throw new Error('项目结构无效');

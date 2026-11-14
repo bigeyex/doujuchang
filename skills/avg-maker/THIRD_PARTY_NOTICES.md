@@ -15,3 +15,7 @@
 ## Example assets
 
 校园示例中的故事、AI 生成插画和项目素材随本项目按 MIT License 提供。豆包工作、Codex、Cocos、微信和抖音等名称及商标属于各自权利人；本项目与这些产品的提供方无隶属或背书关系。
+
+## Lucide / Feather icons
+
+编辑器图标来自 lucide-react 0.468.0。默认启动图标沿用同一羽毛图标，其许可声明见 [licenses/LICENSE.lucide](licenses/LICENSE.lucide)，并随预构建运行时和导出作品保留。
